@@ -1,0 +1,43 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "GermanShepherdDataSource",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "GermanShepherdDataSource",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "GermanShepherdDataSource",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "GermanShepherdDataSource",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "GermanShepherdDataSource",
+    "public": false
+  },
+  "Sample": {
+    "dataSource": "GermanShepherdDataSource",
+    "public": true
+  }
+}

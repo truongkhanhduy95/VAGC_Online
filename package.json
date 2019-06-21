@@ -1,0 +1,45 @@
+{
+  "name": "GermanShepherd",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "NODE_ENV='stage' concurrently \"node core/scripts/generate-model-path.js\" \"node core/scripts/merge-config.js\" \"node .\"",
+    "posttest": "npm run lint && nsp check "
+  },
+  "dependencies": {
+    "@tensorflow-models/mobilenet": "^0.2.2",
+    "@tensorflow/tfjs-node": "^0.1.20",
+    "btoa": "^1.2.1",
+    "compression": "^1.0.3",
+    "concurrently": "^3.6.0",
+    "cors": "^2.5.2",
+    "helmet": "^3.10.0",
+    "jpeg-js": "^0.3.4",
+    "loopback": "^3.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^6.2.0",
+    "loopback-component-storage": "^3.5.0",
+    "loopback-connector-mysql": "^2.4.1",
+    "node-fetch": "^2.3.0",
+    "node-find-folder": "^0.1.32",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^3.0.0"
+    "eslint": ">=4.18.2"
+  },
+  "devDependencies": {
+    "dotenv": "^6.0.0",
+    "eslint": "^4.18.2",
+    "eslint-config-loopback": "^8.0.0",
+    "nsp": "^2.1.0"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "UNLICENSED",
+  "description": "GermanShepherd Project"
+}

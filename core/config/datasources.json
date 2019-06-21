@@ -1,0 +1,23 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory",
+    "file": "db.json"
+  },
+  "GermanShepherdDataSource": {
+    "host": "",
+    "port": 3306,
+    "url": "",
+    "database": "",
+    "password": "",
+    "name": "GermanShepherdDataSource",
+    "user": "ruser",
+    "connector": "mysql"
+  },
+  "storage": {
+    "name": "storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./storage"
+  }
+}
